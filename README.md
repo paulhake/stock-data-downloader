@@ -98,9 +98,9 @@ stock-data-downloader/
 
 ### Output CSV Files
 
-Files are saved with timestamp-based naming:
+Files are saved with date-based naming (works on Windows, Mac, and Linux):
 ```
-newf_raw_prices_2026-01-21 14:30:00+00:00_2026-02-03 20:55:00+00:00.csv
+newf_raw_prices_2026-01-21_2026-02-03.csv
 ```
 
 CSV structure:
