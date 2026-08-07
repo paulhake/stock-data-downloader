@@ -51,6 +51,10 @@ logs/
 *.log
 *.txt
 
+# Test outputs
+test_charts.png
+labeled_data.csv
+
 # macOS
 .DS_Store
 .AppleDouble
