@@ -1,6 +1,6 @@
 # Stock Data Downloader
 
-Automated tool for downloading intraday stock price data from Yahoo Finance with intelligent date detection and comprehensive logging.
+Automated tool for downloading intraday stock price data from Yahoo Finance with intelligent date detection, comprehensive logging, and complete data consolidation system.
 
 ## Features
 
@@ -10,6 +10,8 @@ Automated tool for downloading intraday stock price data from Yahoo Finance with
 - **📝 Detailed logging**: Creates comprehensive logs for every download operation
 - **🎯 Customizable**: Override dates and stock lists as needed
 - **💾 Multiple stocks**: Download 45+ stocks simultaneously
+- **🔄 Data consolidation**: Merge all historical data into a single master file
+- **➕ Easy appending**: Add new downloads to master file with deduplication
 
 ## Quick Start
 
@@ -40,6 +42,36 @@ That's it! The notebook will:
 - Download new data up to today
 - Save everything with proper naming
 - Create detailed logs
+- Optionally append to master data file
+
+## Data Consolidation
+
+### Create Master File
+
+Consolidate all historical CSV files into a single master file:
+
+```bash
+python3 consolidate_historical_data.py
+```
+
+This creates `data/master_stock_data.csv` with all available data.
+
+### Append New Data
+
+After downloading new data, append it to the master file:
+
+```bash
+python3 append_to_master.py path/to/newf_raw_prices_*.csv
+```
+
+Or use the append cell in `stock_data_downloader.ipynb`.
+
+### Documentation
+
+- **[CONSOLIDATION_GUIDE.md](CONSOLIDATION_GUIDE.md)** - Complete workflow guide
+- **[DATA_STATUS.md](DATA_STATUS.md)** - Current data coverage report
+
+See these guides for detailed instructions on consolidation, appending, and working with the master file
 
 ## Usage
 
