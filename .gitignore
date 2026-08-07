@@ -43,10 +43,13 @@ ipython_config.py
 # Data files (CSV downloads)
 stockcharts_data/
 *.csv
+data/
+!data/.gitkeep
 
 # Logs
 logs/
 *.log
+*.txt
 
 # macOS
 .DS_Store
